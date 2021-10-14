@@ -14,27 +14,30 @@
         <div id="home" class="position">
             <h1>Find The Workout Plan For You !!!</h1>
             <form action="data">
-                <div class="gender">
-                    <p>gender</p>
+                <div class="form" id="gender">
+                    <p>What is your Gender ?</p>
                     <input type="radio" name="gender" id="Male">
                     <label for="Male">Male</label>
                     <input type="radio" name="gender" id="Female">
                     <label for="Female">Female</label>
                 </div>
-                <div class="height">
-                    <label for="height">Height</label><br>
+                <div class="form" id="desiredBody">
+                    <p>What are you trying to do ?</p>
+                    <input type="radio" name="desiredBody" id="bulk">
+                    <label for="desiredBody">Bulk</label>
+                    <input type="radio" name="desiredBody" id="slim">
+                    <label for="desiredBody">Slim</label>
+                </div>
+                <div class="form" id="height">
+                    <label for="height">What is your Current Height ?</label><br>
                     <input type="text" id="height" name="height">
                 </div>
-                <div class="weight">
-                    <label for="weight">Weight</label><br>
+                <div class="form" id="weight">
+                    <label for="weight">What is your Current Weight ?</label><br>
                     <input type="text" id="weight" name="weight">
                 </div>
-                <div class="desiredBody">
-                    <input type="radio" name="desiredBody" id="bulk">
-                    <label for="desiredBody">bulk</label>
-                    <input type="radio" name="desiredBody" id="slim">
-                    <label for="desiredBody">slim</label>
-                </div>
+                <input type="submit" value="submit">
+                
             </form>
         </div>
     </div>
