@@ -174,4 +174,18 @@ body {
 
    }
 
+   /* Exercise HTML */
+
+   .exercise-input h1 {
+     display: flex;
+   }
+
+   .exercise-input form {
+     display: flex;
+     width: 25%;
+     margin-left: 10px;
+   }
+
+   
+
  
