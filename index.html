@@ -15,30 +15,44 @@
 
 <body>
   <header class="subnav-hero-section">
-    <h1 class="subnav-hero-headline">Food and Fitness</h1>
+    <div class="exercise-image">
+      <img src="./images/exercise.jpg" id="exercise">
+    </div>
+    <h1 class="subnav-hero-headline">Fitness and Food!</h1>
     <ul class="subnav-hero-subnav">
       <li><a href="./meals.html">Meals</a></li>
       <li><a href="./exercise.html">Exercise</a></li>
       <li><a href="./login.html">Login</a></li>
     </ul>
+    <div class="food-image">
+      <img src="./images/healthfood.jpg" id="food">
+    </div>
   </header>
 
-  <div class="container">
-    <form>
-      <input type="text" id="name" name="name" placeholder="Name">
-      <input type="email" id="email" name="email" placeholder="Email Address">
-      <input type="number" id="age" name="age" placeholder="Age">
-      <input type="number" id="height" name="height" placeholder="Height">
-      <input type="number" id="weight" name="weight" placeholder="Weight">
-      <select type="text" id="goal" name="goal" placeholder="Desired Goal">
-        <option value="slim">Slim down</option>
-        <option value="bulk">Bulk up</option>
+  <form class="container">
+    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="email" id="email" name="email" placeholder="Email Address">
+    <input type="password" id="password" name="password" placeholder="Password">
+    <input type="number" id="age" name="age" placeholder="Age">
+    <input type="number" id="height" name="height" placeholder="Height">
+    <input type="number" id="weight" name="weight" placeholder="Weight">
+    <select type="text" id="goal" name="goal" placeholder="Desired Goal">
+      <option value="slim">Slim down</option>
+      <option value="bulk">Bulk up</option>
+      <input type="submit" value="Signup">
+  </form>
+
+  <aside class="welcome">
+    <div class="welcome-text">
+      <h2>Welcome to </h2>
+    </div>
+  </aside>
 
 
+  <footer>
+    <p> Proudly developed by the Precious Narwhals</p>
+  </footer>
 
-        <input type="submit" value="Signup">
-    </form>
-  </div>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

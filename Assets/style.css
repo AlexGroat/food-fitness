@@ -1,10 +1,14 @@
 :root {
-    
+  --aquamarine: #86e7b8;
+  --mintgreen: #93ff96;
+  --lightgreen: #b2ffa8;
+  --teagreen: #d0ffb7;
+  --beige: #f2f5de;
 }
 
 .subnav-hero-section {
     text-align: center;
-    background: #1779ba;
+    background: linear-gradient(to right, var(--aquamarine), var(--lightgreen));
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -18,6 +22,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     height: 200px;
+    
   }
   
   .subnav-hero-section .subnav-hero-headline {
@@ -40,7 +45,7 @@
   
   .subnav-hero-subnav li a {
     padding: 0.9rem 1rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: #fefefe;
     text-transform: uppercase;
     display: block;
@@ -52,7 +57,20 @@
   .subnav-hero-subnav li a:hover {
     background-color: aquamarine;
   }
+
+ .food-image img {
+   display: flex;
+   height: 100px;
+   padding-left:50px;
+ }
  
+ .exercise-image img {
+   display: flex;
+   float: left;
+   height: 100px;
+   padding-right: 50px;
+  
+ }
 
   * {
     /*box-sizing: border-box; */
@@ -94,3 +112,5 @@
     padding: 20px;
     width: 30%;
   }
+
+ 
