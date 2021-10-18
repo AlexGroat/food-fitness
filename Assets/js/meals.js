@@ -1,4 +1,4 @@
 // spoontacular APIkey
 
-var foodApiKey = "c862c40de19e48f5ab403552cc15acb9";
+var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 
