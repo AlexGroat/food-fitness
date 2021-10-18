@@ -111,6 +111,10 @@ body {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
+  .page-container {
+    display: flex;
+  }
   
   .container {
     border-radius: 5px;
@@ -126,13 +130,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-top: -18%;
-    margin-right: 2%;
+    margin-top: -22%;
+   margin-left: 2%;
+   width: 40%;
   
   }
 
   .welcome p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
 
@@ -174,6 +179,16 @@ body {
 
    }
 
+   .perks h2{
+     margin-left: 16%;
+
+   }
+   
+   .perks p {
+     display: flex;
+     font-size: 2rem;
+   }
+
    /* Exercise HTML */
 
    .exercise-input h1 {
@@ -186,6 +201,6 @@ body {
      margin-left: 10px;
    }
 
-   
+
 
  
