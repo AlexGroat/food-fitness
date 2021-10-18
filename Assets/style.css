@@ -148,6 +148,22 @@ body {
     font-size: 2rem;
   }
 
+  #food-orbit .orbit-next {
+    color: black;
+  }
+
+  #food-orbit .orbit-previous {
+    color: black;
+  }
+
+  #exercise-orbit .orbit-next {
+    color: black;
+  }
+
+  #exercise-orbit .orbit-previous {
+    color: black;
+  }
+
 
 
  

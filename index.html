@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   <link rel="stylesheet" href="./Assets/style.css">
+  <!-- Insert this within your head tag and after foundation.css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+
 
   <title>Health and Fitness</title>
 </head>
@@ -31,94 +34,143 @@
 
   <div class="page-container">
 
-  
 
-  <form class="container">
-    <input type="text" id="name" name="name" placeholder="Name">
-    <input type="email" id="email" name="email" placeholder="Email Address">
-    <input type="password" id="password" name="password" placeholder="Password">
-    <input type="number" id="age" name="age" placeholder="Age">
-    <input type="number" id="height" name="height" placeholder="Height">
-    <input type="number" id="weight" name="weight" placeholder="Weight">
-    <select type="text" id="goal" name="goal" placeholder="Desired Goal">
-      <option value="slim">Slim down</option>
-      <option value="bulk">Bulk up</option>
-      <input type="submit" value="Signup">
-  </form>
 
-  <aside class="welcome">
-    <div class="welcome-header">
-      <h2>Welcome to the Precious Narwhals Fitness and Food application! </h2>
-      <p class="welcome-text">This website is dedicated to improving user fitness through a dynamic  list of exercises
-        while also providing suggestions on healthy recipes to suit the users diet! <br>
-        In the above navbar you can select the meals tab which will direct you to a dedicated
-        page displaying meals to suit your needs. <br> You can also select the exercise tab which will
-        direct you to our page of custom exercises which you can favourite and store for later use.
-      </p>
-    </div>
-  </aside>
+    <form class="container">
+      <input type="text" id="name" name="name" placeholder="Name">
+      <input type="email" id="email" name="email" placeholder="Email Address">
+      <input type="password" id="password" name="password" placeholder="Password">
+      <input type="number" id="age" name="age" placeholder="Age">
+      <input type="number" id="height" name="height" placeholder="Height">
+      <input type="number" id="weight" name="weight" placeholder="Weight">
+      <select type="text" id="goal" name="goal" placeholder="Desired Goal">
+        <option value="slim">Slim down</option>
+        <option value="bulk">Bulk up</option>
+        <input type="submit" value="Signup">
+    </form>
 
-</div>
-  
+    <aside class="welcome">
+      <div class="welcome-header">
+        <h2>Welcome to the Precious Narwhals Fitness and Food application! </h2>
+        <p class="welcome-text">This website is dedicated to improving user fitness through a dynamic list of exercises
+          while also providing suggestions on healthy recipes to suit the users diet! <br>
+          In the above navbar you can select the meals tab which will direct you to a dedicated
+          page displaying meals to suit your needs. <br> You can also select the exercise tab which will
+          direct you to our page of custom exercises which you can favourite and store for later use.
+        </p>
+      </div>
+    </aside>
+
+  </div>
+
   <!-- Carousel for food and exercises in next div-->
 
   <section>
-<<<<<<< HEAD
-  <div id="food-orbit" >
-    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-      <div class="orbit-wrapper">
-        <div class="orbit-controls">
-          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+
+    <div id="food-orbit">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <div class="orbit-wrapper">
+          <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span></button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span></button>
+          </div>
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D" alt="Space">
+                <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D" alt="Space">
+                <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D" alt="Space">
+                <figcaption class="orbit-caption">Encapsulating</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D" alt="Space">
+                <figcaption class="orbit-caption">Outta This World</figcaption>
+              </figure>
+            </li>
+          </ul>s
         </div>
-        <ul class="orbit-container">
-          <li class="is-active orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
-              <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
-              <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
-              <figcaption class="orbit-caption">Encapsulating</figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
-              <figcaption class="orbit-caption">Outta This World</figcaption>
-            </figure>
-          </li>
-        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0">
+            <span class="show-for-sr">First slide details.</span>
+            <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+          </button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
       </div>
-      <nav class="orbit-bullets">
-        <button class="is-active" data-slide="0">
-          <span class="show-for-sr">First slide details.</span>
-          <span class="show-for-sr" data-slide-active-label>Current Slide</span>
-        </button>
-        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-      </nav>
     </div>
-  </div>
-=======
-  <div id="food_carousel"></div>
 
 
->>>>>>> 2b5a444f6d2c7f1c65add2ca5c323fb4a60e981c
 
-  <div id="exercise-orbit"></div>
+    <div id="exercise-orbit">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <div class="orbit-wrapper">
+          <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span></button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span></button>
+          </div>
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image"
+                  src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D"
+                  alt="Space">
+                <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image"
+                  src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D"
+                  alt="Space">
+                <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image"
+                  src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D"
+                  alt="Space">
+                <figcaption class="orbit-caption">Encapsulating</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image"
+                  src="https://cms.cloudinary.vpsvc.com//image/fetch/q_auto:eco,w_auto,f_auto,dpr_auto/https://s3-eu-west-1.amazonaws.com/sitecore-media-bucket/prod%2Fen%2F%7B3D1BD3F1-6E86-40F6-9377-23044E5B9A42%7D"
+                  alt="Space">
+                <figcaption class="orbit-caption">Outta This World</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0">
+            <span class="show-for-sr">First slide details.</span>
+            <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+          </button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
+      </div>
+    </div>
 
-</section>
-  
+  </section>
+
 
 
   <footer>
