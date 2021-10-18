@@ -4,10 +4,13 @@
   --lightgreen: #b2ffa8;
   --teagreen: #d0ffb7;
   --beige: #f2f5de;
+  --onyx: #393e41;
 }
 
 body {
   background-color: var(--beige);
+  font-family: sans-serif;
+  color: var(--onyx);
 }
 
 .subnav-hero-section {
@@ -116,7 +119,34 @@ body {
     margin-left: 10px;
     padding: 20px;
     width: 30%;
+  } 
+
+  .welcome {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -18%;
+    margin-right: 2%;
+  
   }
+
+  .welcome p {
+    font-size: 1.5rem;
+  }
+
+
+  footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 50%;
+    font-size: 2rem;
+  }
+
+
+
+ 
 
   /* Login HTML */
 
