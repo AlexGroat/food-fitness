@@ -150,8 +150,19 @@ body {
     font-size: 2rem;
   }
 
+  .both-orbits {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
 
+  .meals-orbit {
+    min-width: 30%;
+  }
 
+  .exercise-orbit {
+    min-width: 30%;
+  }
  
 
   /* Login HTML */

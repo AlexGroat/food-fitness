@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Foundation link -->
+  <link rel="stylesheet" href="./Assets/style.css">
+  ​
+  <title>Health and Fitness</title>
+  <!-- Compressed CSS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Assets/style.css">
-
-  <title>Health and Fitness</title>
+  ​
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <!-- Insert this within your head tag and after foundation.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+  ​
 </head>
+​
 
 <body>
   <header class="subnav-hero-section">
@@ -28,9 +38,11 @@
       <img src="./images/healthfood.jpg" id="food">
     </div>
   </header>
-
+  ​
   <div class="page-container">
+    ​
 
+    ​
     <form class="container">
       <input type="text" id="name" name="name" placeholder="Name">
       <input type="email" id="email" name="email" placeholder="Email Address">
@@ -43,7 +55,7 @@
         <option value="bulk">Bulk up</option>
         <input type="submit" value="Signup">
     </form>
-
+    ​
     <aside class="welcome">
       <div class="welcome-header">
         <h2>Welcome to the Precious Narwhals Fitness and Food application! </h2>
@@ -55,24 +67,22 @@
         </p>
       </div>
     </aside>
-
+    ​
   </div>
-
-  <!-- Carousel for food and exercises in next div-->
-
-  <section>
-
-
 
   <footer>
     <p> Proudly developed by the Precious Narwhals</p>
   </footer>
-
-
-  <!-- jQuery -->
+  ​
+  ​
+  ​
+  <script>
+    $(document).foundation();
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script src="./Assets/js/script.js"></script>
 </body>
+​
 
 </html>
