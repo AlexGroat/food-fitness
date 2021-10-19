@@ -8,12 +8,17 @@ var mealImg = "";
 var mealName = "";
 var exerciseImg = "";
 var exerciseName = "";
+var signupButton = document.querySelector("#submit")
 
-function pagevisibility() {
-    var page = document.getElementById('page-container')
-}
-
-
+// hiding the sign up menu and dispalying the meals and exercises after signuyp is completed
+function formvisibility() {
+    var x = document.getElementById("visibility");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 // calling the exerciseApiKey to put on the homepage
 
@@ -54,7 +59,7 @@ function displayExercises(event) {
                 imageExercise.setAttribute("src", jsonData.results[i].image);
 
                 exerciseImageAppendDiv.appendChild(imageExercise);
-                exerciseImage.appendChild(imageExercise);
+                // exerciseImage.appendChild(imageExercise);
             }
         })
 
