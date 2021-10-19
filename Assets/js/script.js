@@ -48,7 +48,7 @@ form.addEventListener('submit', (event) => {
     }
  
     if (messages.length > 0) {
-        e.preventDefault()
+        event.preventDefault()
         errorElement.innerText = messages.join(', ')
     }  
 
@@ -57,21 +57,11 @@ form.addEventListener('submit', (event) => {
 });
 
 
-// calling the foodapi
+// calling the foodapi to be then put into the meals-orbit
 
 mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' + foodApiKey;
 
-var mealContainer = document.getElementById('meals-orbit')
+var mealContainer = document.querySelector('meals-list')
 
 searchedMealArray = [];
-
-function searchMeal (query) {
-    form.addEventListener('submit')
-    const Url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=" + $[query] + "&number=50&offset=5"
-    fetch (Url)
-    .then(response => response.json())
-    .then((jsonData) => {
-        console.log(jsonData)
-    })
-}
 
