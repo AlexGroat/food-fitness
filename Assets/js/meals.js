@@ -24,6 +24,8 @@ function searchMeal(event) {
         });
 }
 
+
+
 var mealName = document.createElement("h1");
 var mealImg =  document.createElement("img");
 
