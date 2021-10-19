@@ -1,16 +1,14 @@
 // spoontacular APIkey
-
 var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 
 // exercise API key
-
 var exerciseApiKey = "400efa57855afc8a9662ce44f394f6e2d540beda";
 
 // declaring varibales for the project
-var foodimg = "";
-var fooddescription = "";
-var exerciseimg = "";
-var exercistdescription = "";
+var mealImg = "";
+var mealName = "";
+var exerciseImg = "";
+var exerciseName = "";
 
 function pagevisibility() {
     var page = document.getElementById('page-container')
@@ -51,4 +49,23 @@ form.addEventListener('submit', (event) => {
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
     }  
-}) 
+});
+
+
+// calling the foodapi
+
+mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' + foodApiKey;
+
+var mealContainer = document.getElementById('meals-orbit')
+
+searchedMealArray = [];
+
+function searchMeal (query) {
+    form.addEventListener('submit')
+    const Url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=" + $[query] + "&number=50&offset=5"
+    fetch (Url)
+    .then(respons => response.json())
+    .then((jsonData) => {
+        console.log(jsonData)
+    })
+}
