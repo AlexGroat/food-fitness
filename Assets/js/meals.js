@@ -4,15 +4,15 @@ var searchedMeals = document.querySelector("#appended_meals");
 var mealButton = document.querySelector(".search-meals");
 
 var foodApiKey = "f10bded0f0fb4c758b590774eff56541";
-<<<<<<< HEAD
+ HEAD
 
 mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' + foodApiKey;
 
 var mealContainer = document.querySelector("meal-list")
 
 searchedMealArray = [];
-=======
->>>>>>> 2bd426bbcf146ccf0172e24179a6729370465324
+
+bd426bbcf146ccf0172e24179a6729370465324
 
 function searchMeal(event) {
     event.preventDefault();
