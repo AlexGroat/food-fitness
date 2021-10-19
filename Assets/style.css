@@ -99,6 +99,8 @@ body {
     margin-bottom: 16px;
     resize: vertical;
   }
+
+  
   
   input[type=submit] {
     background-color: #4CAF50;
@@ -113,11 +115,17 @@ body {
     background-color: #45a049;
   }
 
+  input[type=submit]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
   .page-container {
     display: flex;
   }
   
-  .container {
+  .container-index {
     border-radius: 5px;
     background-color: #f2f2f2;
     margin-top: 10px;
@@ -126,6 +134,9 @@ body {
     width: 30%;
   } 
 
+
+
+  
   .welcome {
     float: right;
     display: flex;
@@ -150,19 +161,8 @@ body {
     font-size: 2rem;
   }
 
-  .both-orbits {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-  }
 
-  .meals-orbit {
-    min-width: 30%;
-  }
 
-  .exercise-orbit {
-    min-width: 30%;
-  }
  
 
   /* Login HTML */
@@ -213,6 +213,12 @@ body {
      margin-left: 10px;
    }
 
+   .exercise-input input[type=submit]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 
 
    /* Meals HTML */
@@ -222,10 +228,6 @@ body {
     width: 40%;
     margin-left: 5%;
     margin-top: 2%;
-  }
-
-  .meal-search-form label {
-    font-size: 5rem;
   }
 
   .meal-search-form button {
@@ -243,6 +245,12 @@ body {
 
   .meal-search-form button:hover {
     background-color: var(--aquamarine);
+  }
+
+  .meal-search-form button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
 
