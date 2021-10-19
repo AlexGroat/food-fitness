@@ -22,16 +22,16 @@ function searchMeal(event) {
         .then((jsonData) => {
             searchedMeals.innerHTML = "";
             for (var i = 0; i < jsonData.results.length; i++) {
-                var appendDiv = document.createElement("div");
+                var mealAppendDiv = document.createElement("div");
                 var mealName = document.createElement("h1");
                 var mealImg = document.createElement("img");
     
                 mealImg.setAttribute("src", jsonData.results[i].image);
                 mealName.textContent = jsonData.results[i].title;
     
-                appendDiv.appendChild(mealImg);
-                appendDiv.appendChild(mealName);
-                searchedMeals.appendChild(appendDiv);
+                mealAppendDiv.appendChild(mealImg);
+                mealAppendDiv.appendChild(mealName);
+                searchedMeals.appendChild(mealAppendDiv);
 
             }
          
