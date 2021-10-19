@@ -46,26 +46,44 @@ form.addEventListener('submit', (event) => {
     }
  
     if (messages.length > 0) {
-        e.preventDefault()
+        event.preventDefault()
         errorElement.innerText = messages.join(', ')
     }  
 });
 
 
-// calling the foodapi
+// calling the foodapi to be then put into the meals-orbit
 
 mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' + foodApiKey;
 
-var mealContainer = document.getElementById('meals-orbit')
+var mealContainer = document.querySelector('meals-list')
 
 searchedMealArray = [];
 
-function searchMeal (query) {
-    form.addEventListener('submit')
-    const Url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=" + $[query] + "&number=50&offset=5"
-    fetch (Url)
-    .then(respons => response.json())
-    .then((jsonData) => {
-        console.log(jsonData)
-    })
+function searchMeal(event) {
+    event.preventDefault();
+    var queryMeals = document.querySelector("#meal_search");
+
+
+    const Url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=${queryMeals.value}&number=50`;
+    fetch(Url)
+        .then(response => response.json())
+        .then((jsonData) => {
+            searchedMeals.innerHTML = "";
+            for (var i = 0; i < jsonData.results.length; i++) {
+                var appendDiv = document.createElement("div");
+                var mealName = document.createElement("h1");
+                var mealImg = document.createElement("img");
+    
+                mealImg.setAttribute("src", jsonData.results[i].image);
+                mealName.textContent = jsonData.results[i].title;
+    
+                appendDiv.appendChild(mealImg);
+                appendDiv.appendChild(mealName);
+                searchedMeals.appendChild(appendDiv);
+
+            }
+         
+            console.log(jsonData);
+        });
 }

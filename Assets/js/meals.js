@@ -3,18 +3,20 @@ var searchedMeals = document.querySelector("#appended_meals");
 
 var mealButton = document.querySelector(".search-meals");
 
-var foodApiKey = "1f1c8f27a3a44e8094931c4db570c65e";
+var foodApiKey = "f10bded0f0fb4c758b590774eff56541";
+
+mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' + foodApiKey;
 
 var mealContainer = document.querySelector("meal-list")
 
+searchedMealArray = [];
 
 function searchMeal(event) {
     event.preventDefault();
     var queryMeals = document.querySelector("#meal_search");
 
-    
 
-    const Url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${foodApiKey}&query=${queryMeals.value}&number=50`;
+    const Url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=f10bded0f0fb4c758b590774eff56541&query${queryMeals.value}&number=50`;
     fetch(Url)
         .then(response => response.json())
         .then((jsonData) => {
@@ -36,6 +38,17 @@ function searchMeal(event) {
             console.log(jsonData);
         });
 }
+
+
+
+
+
+
+
+
+
+
+
 
 mealButton.addEventListener("submit", searchMeal);
 
