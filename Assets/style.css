@@ -5,6 +5,7 @@
   --teagreen: #d0ffb7;
   --beige: #f2f5de;
   --onyx: #393e41;
+  --buttongreen: #4CAF50;
 }
 
 body {
@@ -130,8 +131,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-   
-   width: 40%;
+    margin-left: 5%;
+    margin-top: 10px;
+    width: 50%;
   
   }
 
@@ -210,6 +212,40 @@ body {
      width: 25%;
      margin-left: 10px;
    }
+
+
+
+   /* Meals HTML */
+
+  .meal-search-form {
+    display: flex;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  .meal-search-form label {
+    font-size: 5rem;
+  }
+
+  .meal-search-form button {
+    background-color: var(--buttongreen);
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+  .meal-search-form button:hover {
+    background-color: var(--aquamarine);
+  }
+
+
 
 
 
