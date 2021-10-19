@@ -134,7 +134,24 @@ body {
     width: 30%;
   } 
 
+  .both-orbits {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    visibility: visible;
+  }
 
+  .meals-orbit {
+    min-width: 30%;
+    margin: 30px;
+  }
+
+  .exercise-orbit {
+    min-width: 30%;
+    margin: 30px;
+  }
 
   
   .welcome {
@@ -162,8 +179,6 @@ body {
   }
 
 
-
- 
 
   /* Login HTML */
 
