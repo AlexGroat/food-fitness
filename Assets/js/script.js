@@ -4,6 +4,8 @@ var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 // exercise API key
 var exerciseApiKey = "400efa57855afc8a9662ce44f394f6e2d540beda";
 
+var loginButton = document.querySelector("#login-button");
+
 // declaring varibales for the project
 var mealImg = "";
 var mealName = "";
@@ -49,6 +51,9 @@ form.addEventListener('submit', (event) => {
         event.preventDefault()
         errorElement.innerText = messages.join(', ')
     }  
+
+ 
+
 });
 
 
@@ -60,30 +65,3 @@ var mealContainer = document.querySelector('meals-list')
 
 searchedMealArray = [];
 
-function searchMeal(event) {
-    event.preventDefault();
-    var queryMeals = document.querySelector("#meal_search");
-
-
-    const Url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=${queryMeals.value}&number=50`;
-    fetch(Url)
-        .then(response => response.json())
-        .then((jsonData) => {
-            searchedMeals.innerHTML = "";
-            for (var i = 0; i < jsonData.results.length; i++) {
-                var appendDiv = document.createElement("div");
-                var mealName = document.createElement("h1");
-                var mealImg = document.createElement("img");
-    
-                mealImg.setAttribute("src", jsonData.results[i].image);
-                mealName.textContent = jsonData.results[i].title;
-    
-                appendDiv.appendChild(mealImg);
-                appendDiv.appendChild(mealName);
-                searchedMeals.appendChild(appendDiv);
-
-            }
-         
-            console.log(jsonData);
-        });
-}
