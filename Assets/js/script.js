@@ -4,6 +4,8 @@ var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 // exercise API key
 var exerciseApiKey = "400efa57855afc8a9662ce44f394f6e2d540beda";
 
+var loginButton = document.querySelector("#login-button");
+
 // declaring varibales for the project
 var mealImg = "";
 var mealName = "";
@@ -49,6 +51,9 @@ form.addEventListener('submit', (event) => {
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
     }  
+
+ 
+
 });
 
 
@@ -64,8 +69,9 @@ function searchMeal (query) {
     form.addEventListener('submit')
     const Url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=" + $[query] + "&number=50&offset=5"
     fetch (Url)
-    .then(respons => response.json())
+    .then(response => response.json())
     .then((jsonData) => {
         console.log(jsonData)
     })
 }
+
