@@ -25,7 +25,7 @@ const weight = document.getElementById('weight')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (event) => {
     let messages = []
     if (name.value === '' || name.value == null) {
         messages.push('Name is required')
@@ -44,7 +44,7 @@ form.addEventListener('submit', (e) => {
     }
 
     if (age.value <= 14) {
-        messages.push('Must be atleast 15 years of age')
+        messages.push('Must be at least 15 years of age')
     }
  
     if (messages.length > 0) {
