@@ -6,14 +6,16 @@ mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' +foodApiKe
 
 var mealContainer = document.querySelector("meal-list")
 
+searchedMealArray = [];
 
 function searchMeal (query) {
-    const Url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=" + $(query);
+    const Url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=927a07e8df4c43d9a987c5a1a7ed9584&query=" + $[query] + "&number=50&offset=5";
     fetch (Url)
     .then(response => response.json())
     .then((jsonData) => {
-        console.log("we got meal data");
-        console.log(jsonData);
+    console.log(jsonData);
+    
+       
     });
 
 }
