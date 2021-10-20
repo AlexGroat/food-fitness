@@ -1,9 +1,6 @@
 // spoontacular APIkey
 var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 
-// exercise API key
-var exerciseApiKey = "400efa57855afc8a9662ce44f394f6e2d540beda";
-
 var loginButton = document.querySelector("#login-button");
 
 // declaring varibales for the project
@@ -11,57 +8,106 @@ var mealImg = "";
 var mealName = "";
 var exerciseImg = "";
 var exerciseName = "";
+var signupButton = document.querySelector("#submit")
 
-function pagevisibility() {
-    var page = document.getElementById('page-container')
+// hiding the sign up menu and dispalying the meals and exercises after signuyp is completed
+function formvisibility() {
+    var x = document.getElementById("visibility");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+// calling the exerciseApiKey to put on the homepage
+
+var exerciseApiKey = "400efa57855afc8a9662ce44f394f6e2d540beda"
+
+var exerciseList = document.querySelector("#appended-exercise")
+
+var exerciseImage = document.querySelector(".appended-exercise-images")
+
+var signupButton = document.querySelector("#form")
+
+function displayExercises(event) {
+    event.preventDefault();
+
+    const UrlOne = `https://wger.de/api/v2/exerciseinfo/?language=2&apikey=${exerciseApiKey}`
+    fetch(UrlOne)
+        .then(response => response.json())
+        .then((jsonData) => {
+            for (var i = 0; i < jsonData.results.length; i++) {
+                var exerciseAppendDiv = document.createElement("div")
+                var exerciseName = document.createElement("h3")
+
+                exerciseName.textContent = jsonData.results[i].name;
+
+                exerciseAppendDiv.appendChild(exerciseName)
+                exerciseList.appendChild(exerciseAppendDiv)
+            }
+        })
+
+    const UrlTwo = `https://wger.de/api/v2/exerciseimage/?langauge=2&apikey=${exerciseApiKey}`;
+    fetch(UrlTwo)
+        .then(response => response.json())
+        .then((jsonData) => {
+            for (var i = 0; i < jsonData.results.length; i++) {
+                var exerciseImageAppendDiv = document.createElement("div");
+                var imageExercise = document.createElement("img");
+
+                imageExercise.setAttribute("src", jsonData.results[i].image);
+
+                exerciseImageAppendDiv.appendChild(imageExercise);
+                // exerciseImage.appendChild(imageExercise);
+            }
+        })
+
 }
 
-// error messages for the form
-const name = document.getElementById('name')
-const email = document.getElementById('email')
-const age = document.getElementById('age')
-const height = document.getElementById('height')
-const weight = document.getElementById('weight')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
-
-form.addEventListener('submit', (event) => {
-    let messages = []
-    if (name.value === '' || name.value == null) {
-        messages.push('Name is required')
-    }
-
-    if (password.value.length <= 6) {
-        messages.push('Password must be longer than 6 characters')
-    }
-
-    if (password.value.length >= 20) {
-        messages.push('Password must be no longer than 20 characters')
-    }
-
-    if (password.value === 'password') {
-        messages.push('Password cannot be password')
-    }
-
-    if (age.value <= 14) {
-        messages.push('Must be at least 15 years of age')
-    }
- 
-    if (messages.length > 0) {
-        event.preventDefault()
-        errorElement.innerText = messages.join(', ')
-    }  
-
- 
-
-});
+signupButton.addEventListener("submit", displayExercises)
 
 
-// calling the foodapi to be then put into the meals-orbit
+// calling the foodApiKey to put into the homepage
+
+var searchedMeals = document.querySelector("#appended-meals");
+
+var signupButton = document.querySelector("#form");
+
+var foodApiKey = "f10bded0f0fb4c758b590774eff56541";
 
 mealUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=' + foodApiKey;
 
-var mealContainer = document.querySelector('meals-list')
+var mealContainer = document.querySelector("meal-list")
 
 searchedMealArray = [];
 
+function searchMeal(event) {
+    event.preventDefault();
+    var queryMeals = document.querySelector("#meal_search");
+
+
+    const Url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=f10bded0f0fb4c758b590774eff56541&query${queryMeals.value}&number=50`;
+    fetch(Url)
+        .then(response => response.json())
+        .then((jsonData) => {
+            searchedMeals.innerHTML = "";
+            for (var i = 0; i < jsonData.results.length; i++) {
+                var mealAppendDiv = document.createElement("div");
+                var mealName = document.createElement("h1");
+                var mealImg = document.createElement("img");
+    
+                mealImg.setAttribute("src", jsonData.results[i].image);
+                mealName.textContent = jsonData.results[i].title;
+    
+                mealAppendDiv.appendChild(mealImg);
+                mealAppendDiv.appendChild(mealName);
+                searchedMeals.appendChild(mealAppendDiv);
+
+            }
+         
+            console.log(jsonData);
+        });
+}
+
+signupButton.addEventListener("submit", searchMeal);
