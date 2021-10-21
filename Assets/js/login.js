@@ -12,15 +12,13 @@ function userLogin(event) {
 
     } else {
         console.log("Incorrect Email or Password");
-<<<<<<< HEAD
         document.getElementById("calloutalert").style.visibility = "visible";
     }
-=======
+
         
     };
 
 
->>>>>>> 297ca2c4eb3c5a20308a87271c029db2639c6b09
 }
 
 loginButton.addEventListener("submit", userLogin);
