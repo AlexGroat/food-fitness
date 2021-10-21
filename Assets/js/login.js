@@ -12,12 +12,6 @@ function userLogin(event) {
 
     } else {
         console.log("Incorrect Email or Password");
-        document.getElementById("calloutalert").style.visibility = "visible";
-    }
-
-        
-    };
-
 
 }
 
