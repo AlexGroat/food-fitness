@@ -197,6 +197,12 @@ body {
     margin-top: 2%;
   }
 
+  .login span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
   .login 
  
 
