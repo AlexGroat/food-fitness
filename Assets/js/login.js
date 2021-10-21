@@ -1,3 +1,4 @@
-var entry = localStorage.getItem("user");
+var user =JSON.parse(localStorage.getItem('user'));
 
-console.log("email: " + entry)
+
+console.log(user);

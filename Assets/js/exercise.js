@@ -11,37 +11,23 @@ var exerciseButton = document.querySelector(".exercise-form")
 function displayExercises(event) {
     event.preventDefault();
 
-    const UrlOne = `https://wger.de/api/v2/exerciseinfo/?language=2&apikey=${exerciseApiKey}`;
+    const UrlOne = `https://wger.de/api/v2/exercise/?limit=50&offset=20&language=2`;
     fetch(UrlOne)
         .then(response => response.json())
         .then((jsonData) => {
             for (var i = 0; i < jsonData.results.length; i++) {
                 var exerciseAppendDiv = document.createElement("div");
                 var exerciseName = document.createElement("h1");
+                var exerciseDescription = document.createElement("p");
 
                 exerciseName.textContent = jsonData.results[i].name;
+                exerciseDescription.textContent = jsonData.results[i].description;
 
                 exerciseAppendDiv.appendChild(exerciseName);
+                exerciseAppendDiv.appendChild(exerciseDescription);
                 exerciseList.appendChild(exerciseAppendDiv);
             }
         })
-    
-    const UrlTwo = `https://wger.de/api/v2/exerciseimage/?langauge=2&apikey=${exerciseApiKey}`;
-    fetch(UrlTwo)
-    .then(response => response.json())
-    .then((jsonData) => {
-        for (var i = 0; i < jsonData.results.length; i++) {
-            var exerciseImageAppendDiv = document.createElement("div");
-            var imageExercise = document.createElement("img");
-
-            imageExercise.setAttribute("src", jsonData.results[i].image);
-
-            exerciseImageAppendDiv.appendChild(imageExercise);
-            exerciseList.appendChild(imageExercise);
-        }
-    })
 }
-
-
 
 exerciseButton.addEventListener("submit", displayExercises);
