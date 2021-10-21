@@ -10,16 +10,6 @@ var exerciseImg = "";
 var exerciseName = "";
 var signupButton = document.querySelector("#submit")
 
-// hiding the sign up menu and dispalying the meals and exercises after signuyp is completed
-function formvisibility() {
-    var x = document.getElementById("visibility");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
 // calling the exerciseApiKey to put on the homepage
 
 var exerciseApiKey = "400efa57855afc8a9662ce44f394f6e2d540beda"
