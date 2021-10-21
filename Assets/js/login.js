@@ -9,10 +9,11 @@ function userLogin(event) {
 
     if (emailInput.value === user.email && passwordInput.value === user.password) {
         console.log("Correct Email and Password");
+
     } else {
         console.log("Incorrect Email or Password");
-        $("#login-alert").toggle()
-     } ;
+        
+    };
 
 
 }
