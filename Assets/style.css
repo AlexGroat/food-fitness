@@ -221,8 +221,10 @@ body {
 
    /* Exercise HTML */
 
-   .exercise-input h1 {
+   .exercise-input {
      display: flex;
+     margin-top: 2%;
+
    }
 
    .exercise-input form {
@@ -295,6 +297,3 @@ body {
   font-size: 1rem;
 }
 
-#calloutalert {
-  visibility: hidden;
-}
