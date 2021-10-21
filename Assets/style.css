@@ -294,3 +294,7 @@ body {
   color: var(--onyx);
   font-size: 1rem;
 }
+
+#calloutalert {
+  visibility: hidden;
+}
