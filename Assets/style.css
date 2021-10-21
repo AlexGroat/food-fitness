@@ -198,6 +198,13 @@ body {
     margin-top: 2%;
   }
 
+
+  .perks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
   .login span {
     display: flex;
     justify-content: center;
@@ -218,12 +225,9 @@ body {
    .perks h2{
      margin-left: 16%;
 
-   }
-   
-   .perks p {
-     display: flex;
-     font-size: 2rem;
-   }
+
+}
+ 
 
    /* Exercise HTML */
 
@@ -241,6 +245,10 @@ body {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  #append-exercise-image img {
+    size: 50px;
   }
 
 
@@ -284,6 +292,7 @@ body {
 }
 
 #appended-meals div {
+  margin-left: 10px;
   padding: 5px 5px;
 }
 
@@ -292,6 +301,7 @@ body {
 }
 
 #appended-meals h1 {
+  color: var(--onyx);
   font-size: 1rem;
 }
 

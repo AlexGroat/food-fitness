@@ -37,7 +37,7 @@ function displayExercises(event) {
             imageExercise.setAttribute("src", jsonData.results[i].image);
 
             exerciseImageAppendDiv.appendChild(imageExercise);
-            exerciseImage.appendChild(imageExercise);
+            exerciseList.appendChild(imageExercise);
         }
     })
 }
