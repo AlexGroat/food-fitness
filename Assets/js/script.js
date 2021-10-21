@@ -6,7 +6,7 @@ var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 
 var emailInput = document.querySelector("#email");
 var passwordInput = document.querySelector("#password");
-var signupButton = document.querySelector("#submit");
+var signupButton = document.querySelector("#signup");
 
 signupButton.addEventListener("click", function(event) {
     event.preventDefault();
