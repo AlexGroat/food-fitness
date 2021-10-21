@@ -133,6 +133,7 @@ body {
     margin-left: 10px;
     padding: 20px;
     width: 100%;
+    max-width: 30%;
   } 
 
   .both-orbits {
