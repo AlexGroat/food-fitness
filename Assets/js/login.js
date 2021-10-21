@@ -12,8 +12,7 @@ function userLogin(event) {
 
     } else {
         console.log("Incorrect Email or Password");
-        
-    }
+
 }
 
 loginButton.addEventListener("submit", userLogin);
