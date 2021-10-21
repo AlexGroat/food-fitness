@@ -1,14 +1,25 @@
 // spoontacular APIkey
 var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 
-var loginButton = document.querySelector("#login-button");
 
-// declaring varibales for the project
-var mealImg = "";
-var mealName = "";
-var exerciseImg = "";
-var exerciseName = "";
-var signupButton = document.querySelector("#submit")
+// store sign in data to local storage
+
+var emailInput = document.querySelector("#email");
+var passwordInput = document.querySelector("#password");
+var signupButton = document.querySelector("#submit");
+
+signupButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var user = {
+        email: emailInput.value.trim(),
+        password: passwordInput.value.trim()
+    };
+
+    localStorage.setItem("user", JSON.stringify(user));
+});
+=======
+
 
 // calling the exerciseApiKey to put on the homepage
 
@@ -18,7 +29,7 @@ var exerciseList = document.querySelector("#appended-exercise")
 
 var exerciseImage = document.querySelector(".appended-exercise-images")
 
-var signupButton = document.querySelector("#form")
+
 
 function displayExercises(event) {
     event.preventDefault();

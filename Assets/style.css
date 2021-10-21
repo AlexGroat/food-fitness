@@ -277,6 +277,24 @@ body {
     transform: translateY(4px);
   }
 
+#appended-meals {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#appended-meals div {
+  padding: 5px 5px;
+}
+
+#appended-meals img {
+  size: 50px;
+}
+
+#appended-meals h1 {
+  font-size: 1rem;
+}
+
 
 
 
