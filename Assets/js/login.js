@@ -11,10 +11,8 @@ function userLogin(event) {
         console.log("Correct Email and Password");
     } else {
         console.log("Incorrect Email or Password");
-        $("#login-alert").toggle()
-     } ;
-
-
+        document.getElementById("calloutalert").style.visibility = "visible";
+    }
 }
 
 loginButton.addEventListener("submit", userLogin);
