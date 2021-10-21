@@ -16,7 +16,7 @@ function userLogin(event) {
     }
 
         
-    };
+};
 
 
 }
