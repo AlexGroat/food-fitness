@@ -130,7 +130,7 @@ body {
   .container-index {
     border-radius: 5px;
     background-color: #f2f2f2;
-    margin-top: 10px;
+    margin-top: -90px;
     margin-left: 10px;
     padding: 20px;
     width: 100%;
@@ -204,14 +204,11 @@ body {
      flex-direction: column;
      margin-top: 2%;
      margin-left: 30%;
-
    }
 
    .perks h2{
      margin-left: 16%;
-
-
-}
+  }
  
 
    /* Exercise HTML */
@@ -289,9 +286,3 @@ body {
   color: var(--onyx);
   font-size: 1rem;
 }
-
-
-
-
-
- 
