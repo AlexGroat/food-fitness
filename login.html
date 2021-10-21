@@ -24,11 +24,15 @@
     </header>
 
     <div class="login">
-        <form>
-            <input type="email" id="email" name="email" placeholder="Email Address">
-            <input type="password" id="password" name="password" placeholder="Password">
-            <input type="submit" value="Login">
+        <form id="form_id" method="post" name="myform">
+            <label>Email :</label>
+            <input type="text" name="email" id="email" />
+            <label>Password :</label>
+            <input type="password" name="password" id="password" />
+            <input type="button" value="Login" id="submit" onclick="validate()" />
         </form>
+        <span><b class="note">Note : </b>For this demo use following username and password. <br /><b class="valid">User
+               Email : alex.groat.95@gmail.com <br />Password : banana123</b></span>
     </div>
 
     <section class="perks">
