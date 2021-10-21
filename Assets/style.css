@@ -124,6 +124,7 @@ body {
 
   .page-container {
     display: flex;
+    flex-direction: row;
   }
   
   .container-index {
@@ -205,13 +206,7 @@ body {
     align-items: center;
     margin-top: 20px;
 
-  .login span {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-  .login 
+  } 
  
 
    .perks {

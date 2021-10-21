@@ -18,7 +18,6 @@ signupButton.addEventListener("click", function(event) {
 
     localStorage.setItem("user", JSON.stringify(user));
 });
-=======
 
 
 // calling the exerciseApiKey to put on the homepage
