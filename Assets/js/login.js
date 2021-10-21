@@ -1,10 +1,3 @@
+var entry = localStorage.getItem("user");
 
-
-function validate() {
-    var email = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-
-
-}
-
+console.log("email: " + entry)
