@@ -1,6 +1,7 @@
 // spoontacular APIkey
 var foodApiKey = "927a07e8df4c43d9a987c5a1a7ed9584";
 
+
 // store sign in data to local storage
 
 var emailInput = document.querySelector("#email");
@@ -17,6 +18,8 @@ signupButton.addEventListener("click", function(event) {
 
     localStorage.setItem("user", JSON.stringify(user));
 });
+=======
+
 
 // calling the exerciseApiKey to put on the homepage
 
