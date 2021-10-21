@@ -15,24 +15,23 @@ body {
 }
 
 .subnav-hero-section {
-    text-align: center;
-    background: linear-gradient(to right, var(--aquamarine), var(--lightgreen));
-    background-size: cover;
-    position: relative;
-    overflow: visible;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 200px;
-    margin: -30px;
-    
-  }
+  text-align: center;
+  background: linear-gradient(to right, var(--aquamarine), var(--lightgreen));
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 200px;
+  margin: -30px;
+}
   
   .subnav-hero-section .subnav-hero-headline {
     color: #fefefe;
@@ -295,5 +294,9 @@ body {
 #appended-meals h1 {
   color: var(--onyx);
   font-size: 1rem;
+}
+
+#calloutalert {
+  visibility: hidden;
 }
 
