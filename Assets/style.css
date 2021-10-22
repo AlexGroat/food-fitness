@@ -222,8 +222,13 @@ body {
 
    .exercise-input {
      display: flex;
+     align-items: center;
      margin-top: 2%;
+   }
 
+   .exercise-form {
+     display: flex;
+     align-items: center;
    }
 
    .exercise-input form {
