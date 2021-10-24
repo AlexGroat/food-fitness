@@ -193,6 +193,10 @@ body {
    .perks h2{
      margin-left: 16%;
   }
+
+  #calloutalert {
+    visibility: hidden;
+  }
  
 
    /* ///////////////////// Exercise HTML ///////////////////////// */
