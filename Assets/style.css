@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box; 
+  
+}
+
 :root {
   --aquamarine: #86e7b8;
   --mintgreen: #93ff96;
@@ -79,11 +84,6 @@ body {
    padding-right: 50px;
   
  }
-
-  * {
-    box-sizing: border-box; 
-    
-  }
   
   input[type=text],
   select,
@@ -128,7 +128,6 @@ body {
     cursor: pointer;
   }
 
-
   .page-container {
     display: flex;
     align-items: center;
@@ -143,26 +142,7 @@ body {
     width: 100%;
     max-width: 30%;
   } 
-
-  .both-orbits {
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    padding: 5px;
-    visibility: visible;
-  }
-
-  .meals-orbit {
-    min-width: 30%;
-    margin: 30px;
-  }
-
-  .exercise-orbit {
-    min-width: 30%;
-    margin: 30px;
-  }
-
-  
+ 
   .welcome {
     float: right;
     display: flex;
@@ -178,7 +158,6 @@ body {
     font-size: 1.2rem;
   }
 
-
   footer {
     display: flex;
     position: relative;
@@ -187,9 +166,7 @@ body {
     font-size: 2rem;
   }
 
-
-
-  /* Login HTML */
+  /*/////////////////////// Login HTML //////////////////////*/
 
   .login {
     display: flex;
@@ -218,7 +195,7 @@ body {
   }
  
 
-   /* Exercise HTML */
+   /* ///////////////////// Exercise HTML ///////////////////////// */
 
    .exercise-input {
      display: flex;
@@ -243,13 +220,18 @@ body {
     transform: translateY(4px);
   }
 
-  #append-exercise-image img {
-    size: 50px;
+  #append-exercise {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--teagreen);
+    border: dotted 2px var(--onyx);
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
 
-
-   /* Meals HTML */
+   /* ///////////////////////////// Meals HTML ////////////////////////////////////*/
 
   .meal-search-form {
     display: flex;
@@ -283,25 +265,16 @@ body {
 
 #appended-meals {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
+  font: 1em sans-serif;
 }
 
 #appended-meals div {
-  margin-left: 10px;
-  padding: 5px 5px;
-}
-
-#appended-meals img {
-  size: 50px;
-}
-
-#appended-meals h1 {
-  color: var(--onyx);
-  font-size: 1rem;
-}
-
-#calloutalert {
-  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
 }
 
