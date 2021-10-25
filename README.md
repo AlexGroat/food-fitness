@@ -5,6 +5,13 @@
 The Precious Narwhals team have developed and accomplished our goal of delivering a MVP for our project. The application allows users to sign up
 and browse various workout exercises and meal recipes to help accomplish their goal of a healthier lifestyle.
 
+# *The team* #
+
+* Kobe Robinson
+* Alex Groat
+* Jacob Constantinidis
+* Mansi Patel
+
 # *User Story* #
 
 As a person who wants to improve my health, I want an easy way to find workouts and recipes, so I can further improve my well being.
@@ -47,8 +54,6 @@ GITHUB REPOSITROY URL: https://github.com/AlexGroat/food-fitness
 # *Special Thanks* #
 
 The Precious Narwhals would especially like to thank our instructor Wagner Lopes and teaching assistant Ben Fawcett for guiding and assisting in the development.
-
-
 
 # License
 
