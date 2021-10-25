@@ -44,6 +44,11 @@ GITHUB REPOSITROY URL: https://github.com/AlexGroat/food-fitness
 
 ![food and fitness](https://user-images.githubusercontent.com/88314794/138581724-cc43c4c4-766e-4c94-b443-eac11d9b5d5c.png)
 
+# *Special Thanks* #
+
+The Precious Narwhals would especially like to thank our instructor Wagner Lopes and teaching assistant Ben Fawcett for guiding and assisting in the development.
+
+
 
 # License
 
